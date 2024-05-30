@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SEARCHING EXAMPLE</h1>
+    <hr />
+    <input type="number" placeholder="Enter A Number" id="searchValue" />
+    <button id="btn">Search Value</button>
+
+    <script>
+      let arr = [10, 20, 30, 40, 40, 60, 70, 80, 90, 100];
+      let searchValue = document.querySelector("#searchValue");
+      let btn = document.querySelector("#btn");
+      let count = 0;
+      let position = undefined;
+      let x = '';
+      let y =[];
+
+      function searckey() {
+        x = searchValue.value;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] == x) {
+            y=x;
+            count = count + 1;
+            position = i;
+          }
+        }
+        console.log(position);
+       document.write(`value ${y} is  ${count}  time founded  ${position}`)
+      }
+
+      btn.onclick = searckey;
+    </script>
+  </body>
+</html>

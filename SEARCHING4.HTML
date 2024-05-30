@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SEARCHING EXAMPLE</h1>
+    <hr />
+
+    <input
+      type="number"
+      id="searchValue"
+      placeholder="Enter A Number"
+    /><br /><br />
+    <button id="btn">Search Value</button>
+
+    <script>
+      let searchValue = document.querySelector("#searchValue");
+      let btn = document.querySelector("#btn");
+      let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+      let position = undefined;
+      let x = "";
+
+      function aaa() {
+      
+        // console.log("hii");
+        x = searchValue.value;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] == x) {
+            position = i;
+            break;
+          }
+        }
+        console.warn(position);
+        document.write(`${x} is founded ${position} position `);
+      }
+     
+      btn.onclick = aaa;
+    
+     
+    </script>
+  </body>
+</html>

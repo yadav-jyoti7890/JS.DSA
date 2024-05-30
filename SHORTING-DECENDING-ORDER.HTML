@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SHORTING IN DECENDING ORDER</h1>
+    <hr>
+
+    <script>
+        let a = [50,3,20,1,0,888,1000];
+        let k = 0;
+        let c = [];
+
+
+
+        for(let i=0; i<a.length; i++){
+            // console.log(a.length);
+            // console.log(a);
+            for(let j=i+1; j<a.length; j++){
+                // console.log(j)
+                if(a[i]<a[j]){
+                 c[k]=a[j];
+                 a[j]=a[i];
+                 a[i]=c[k];
+                }
+            }
+        }
+        console.log(a);
+    </script>
+</body>
+</html>

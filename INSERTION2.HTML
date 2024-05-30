@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INSERTION</title>
+  </head>
+  <body>
+    <h1>insertion examples</h1>
+    <hr />
+
+    <input type="number" id="pos" placeholder="Enter A position" />
+    <input type="number" id="newValue" placeholder="Enter New Number" />
+    <button id="btn">Click Insert Number</button>
+
+    <script>
+      let pos = document.querySelector("#pos");
+      let newValue = document.querySelector("#newValue");
+      let btn = document.querySelector("#btn");
+
+      let position = "";
+      let nvalue = "";
+
+      let arr = [10, 20, 40, 50, 60];
+
+      function insertValue() {
+        let position = pos.value;
+        let nvalue = newValue.value;
+
+        for (let i = arr.length - 1; i >= 0; i--) {
+          if (i >= position) {
+            arr[i + 1] = arr[i];
+            if (i == position) {
+              arr[i] = nvalue;
+            }
+          }
+        }
+
+        document.write(`<br>`);
+
+        document.write(`value is insert in = ${position} postion`);
+        document.write(` <br> ${arr}`);
+      }
+
+      btn.onclick = insertValue;
+    </script>
+  </body>
+</html>

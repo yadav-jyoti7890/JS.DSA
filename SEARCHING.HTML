@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SEARCHING EXAMPLE</h1>
+    <hr />
+
+    <script>
+      let arr = [
+        1, 4, 8, 9, 15, 19, 77, 66, 12, 22, 35, 37, 58, 60, 100, 120, 140,
+      ];
+      // let x=arr.length;
+
+      // console.warn(x);
+      let searchValue = 10;
+      let a = parseInt(searchValue);
+      let x = "";
+
+      for (let i = 0; i < arr.length; i++) {
+        if (a == arr[i]) {
+          let x = arr[i];
+        } else {
+          console.log("data not found");
+        }
+        break;
+      }
+    
+      console.log("data is found");
+    </script>
+  </body>
+</html>

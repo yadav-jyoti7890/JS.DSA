@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>SHORTING ASCENDING ORDER EXAMPLE</H1>
+    <hr>
+
+    <script>
+        let a=[110,150,105,120,125]
+        
+       let c = [];
+       let k = 0; 
+
+        for(let i=0; i<a.length; i++){
+           
+            // console.log(a);
+
+          
+            for(let j=i+1; j<a.length; j++){
+              
+              
+                if(a[i]>a[j]){
+                  c[k]=a[j];
+                  a[j]=a[i];
+                  a[i]=c[k];
+                }
+            }
+        }
+
+        console.log(a)
+      
+    </script>
+</body>
+</html>

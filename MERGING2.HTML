@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>MERGING EXAMPLE</h1>
+    <hr />
+
+    <script>
+      let a = [8, 9, 10, 13];
+      let b = [60, 70, 80];
+      let c = [];
+      let i = 0;
+      let j = 0;
+      let k = 0;
+
+      for (let i = 0; i < a.length; i++) {
+        console.log(a.length);
+        c[k] = a[i];
+        k++;
+      }
+
+    //   console.log(c);
+    //   console.log(c[0]);
+    //   console.log(c[1]);
+    //   console.log(c[2]);
+    //   console.log(c[3]);
+
+      for (let j = 0; j < b.length; j++) {
+        // console.log(c[4]); //when its find a undefind value than replace the new value 
+        // console.log(c[5]);
+        // console.log(c[6]); 
+        c[k] = b[j];
+        k++;
+        console.log(c);
+      }
+    </script>
+  </body>
+</html>
