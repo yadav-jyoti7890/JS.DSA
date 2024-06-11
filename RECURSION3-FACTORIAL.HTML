@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>RECUSION factorial EXAMPLES</h1>
+    <hr />
+
+    <script>
+      let data = 5;
+      let x = 1;
+
+      function factorial(item, a) {
+        if (item > 0) {
+          factorial(item, a)
+           for (let i = 0; i < item; item--) {
+            a = a * item;
+          };
+        }
+        console.log(a);
+      }
+
+      factorial(data, x);
+    </script>
+  </body>
+</html>

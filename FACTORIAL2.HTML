@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>FACTORIAL2 EXAMPLES</H1>
+    <hr>
+
+    <input type="number" id="findfac" placeholder="Enter A number"/>
+    <button id="btn">Find Factorial To Click Button</button>
+
+    <p >factorial answer wil be come here : <span id="r">--</span></p>
+
+    <script>
+        let findfac = document.querySelector('#findfac');
+        let btn = document.querySelector('#btn');
+        let r = document.querySelector('#r');
+        let y = '';
+      
+
+        function factorial(){
+            let x = parseInt(findfac.value);
+            let a = 1;
+            // console.log("hii");
+            for(let i=0; 0<x; x--){
+               a = a*x;
+               r.innerText = a;
+            //    r.innerText = y;
+            }
+            console.log(a);
+
+        }
+        
+
+        btn.onclick=factorial;
+       
+       
+        
+    </script>
+</body>
+</html>

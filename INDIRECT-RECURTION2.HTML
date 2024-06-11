@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDIRECT-RECURSION</h1>
+    <hr>
+
+    <script>
+        let i = 0;
+        let j = 0;
+        let num = 10;
+
+        function factorial(){
+          if(j<5){
+             j++;
+             facpro();
+          }
+        }
+
+        function facpro(){
+            // console.log(j);
+            for(let i=0; i<num; num--){
+                j = j*num;
+                // console.log(num)
+                factorial();
+            }
+            console.log(j)
+        }
+
+        factorial();
+    </script>
+</body>
+</html>

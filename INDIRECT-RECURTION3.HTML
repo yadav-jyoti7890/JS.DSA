@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>INDIRECT-RECURSION</h1>
+  <hr>
+
+    <script>
+        let a = [10,20,30,40,50];
+        let b = [, 60,70,80,90,100];
+        let c = undefined;
+        let i = 0; 
+        let j = 0;
+
+
+        function merge(c){
+            // console.log("hii ~~~~~~~~~~~~~~~~~~~~~~");
+            console.log(c)
+          
+        }
+
+        function merging(){
+
+            if(i<a.length && j<b.length){
+                console.log("hii")
+             c = a+b;
+             merge(c);
+             
+            }
+               
+        }
+
+        merging();
+    </script>
+</body>
+</html>

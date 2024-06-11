@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDIRECT RECURTION</h1>
+    <hr>
+    <script>
+        let i = 1;
+
+        function aaa(){
+            if(i<5){ 
+                i++;
+                // console.warn(i);
+                pro();
+            }
+        }
+
+        function pro (){
+                console.warn(i);
+                aaa();
+        }
+
+        aaa();
+
+        // console.log(i);
+    </script>
+</body>
+</html>

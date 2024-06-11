@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAY REVERSE WITH THE INDIRECT-RECURSION</h1>
+    <hr>
+
+    <script>
+        let a = [10,20,30,40,50,60,70,80,90,100];
+        let i = a.length-1;
+        // console.log(i);
+
+        function rev(){
+          if(i>=0){
+            arev();
+          }
+        }
+
+        function arev(){
+            console.log(a[i]);
+            rev(i--);
+        }
+
+        rev();
+    </script>
+</body>
+</html>
