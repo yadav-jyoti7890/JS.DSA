@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>STACK CONCEPT IN JAVA-SCRIPT</h1>
+    <hr />
+
+    <script>
+      let arr = [];
+      let aaa = arr.length;
+      let stackMax = 7;
+
+      function push(data){
+          if(aaa>=stackMax)
+              alert("stack si full you can not more value insert" + data);
+          arr[aaa] = data;
+          aaa+=1;
+
+      }
+
+      push(10);
+      push(20);
+      push(30);
+      push(40);
+      push(50);
+      push(60);
+      push(70);
+      push(80);
+      push(90);
+
+      console.log(arr);
+    </script>
+  </body>
+</html>

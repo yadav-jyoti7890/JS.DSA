@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>STACK EXAMPLES</H1>
+    <hr>
+
+    <input type="" placeholder="Enter Number" id="push">
+    <button id="btn">push data in array</button>
+    <button id="final">final result</button>
+    <button id="remove">remove array</button>
+    <p>answer will be come here : <span id="r"></span></p>
+
+
+    <script>
+        const push = document.querySelector('#push');
+        const btn = document.querySelector('#btn');
+        const r = document.querySelector('#r');
+        const final = document.querySelector('#final');
+        const remove = document.querySelector('#remove')
+
+
+        let arr = [];
+        let aaa = arr.length;
+        // console.log(aaa);
+        let c = null;
+
+        function pu(){
+            let b = parseInt(push.value)
+            arr[aaa] = b;
+            console.log(arr);
+            aaa+=1;
+           
+        }
+
+        function showarr(){
+            r.innerText = arr;
+        }
+
+        function removearr(){
+            r.innerText = null;
+        }
+       
+
+
+        btn.onclick=pu;
+        final.onclick=showarr;
+        remove.onclick=removearr;
+
+
+
+    </script>
+</body>
+</html>
