@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>STACK PUSH && POP EXAMPLES WITH THE HELP OF BUTTON</h1>
+    <hr>
+
+    <input type="number" placeholder="Please Enter Number" id="a"> &nbsp;
+    <button id="btn-push">push value</button> &nbsp;
+    <button id="btn-pop">pop value</button> &nbsp;
+    <button id="btn-display">display the final result</button>
+    <p>Answer will be here:-<span id="r"></span></p>
+
+    <script>
+        let btnpush = document.querySelector('#btn-push');
+        let btnpop = document.querySelector('#btn-pop');
+        let btndisplay = document.querySelector('#btn-display');
+        let a = document.querySelector('#a');
+        let r = document.querySelector('#r');
+
+        let arr = [];
+        let current = arr.length;
+        let max = 6;
+        let b;
+
+        function pu(){
+          b = parseInt(a.value);
+          if(current<max){
+          arr[current]=b;
+          current+=1;
+        }
+        else{
+            alert("your stack is not empty  so you can not more detail insert your stack")
+        }
+        console.warn(arr);
+         }
+
+         function po(){
+            if(current>0){
+                current-=1;
+                arr.length-=1;
+            }
+            else{
+                alert("your is already empty")
+            }
+         }
+        
+         function display(){
+         r.innerText = arr;
+         }
+       
+         btnpush.onclick=pu;
+         btndisplay.onclick=display;
+         btnpop.onclick=po;
+         
+
+    </script>
+</body>
+</html>

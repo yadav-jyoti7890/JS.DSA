@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>STACK PUSH && POP EXAMPLES</h1>
+    <hr />
+
+    <script>
+      let arr = [];
+      let current_length = arr.length;
+      let max = 7;
+      let y;
+
+      function push(data) {
+        // console.log(data)
+        arr[current_length] = data;
+        // console.log(current_length)
+        current_length += 1;
+      }
+
+    //  console.log(current_length)
+
+      function pop() {
+        if (current_length>0) {
+          current_length-=1; // it means current_length = current_length-1;
+          arr.length-=1;
+        }
+       else{
+        alert("your stack is not empty  so you can not more detail insert your stack")
+       }
+      }
+
+      console.warn(arr);
+    //   console.log(current_length);
+      // push(19,20,30,40); con not call in this way
+      push(10);
+      push(20);
+      push(30);
+      push(40);
+      push(50);
+      push(60);
+      push(70);
+      push(80);
+      push(90);
+      push(100);
+      pop();
+      pop();
+
+     
+    </script>
+  </body>
+</html>

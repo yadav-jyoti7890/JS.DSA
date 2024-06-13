@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>STACK POP EXAMPLES</h1>
+    <hr>
+    
+
+    <script>
+        let arr = [];
+        // let current.len = arr.length; //SyntaxError: Unexpected token '.'
+        let current_length=arr.length;
+        console.log(current_length);
+
+        function push(data){
+         let max = 7;
+         if(current_length>max){
+            alert("your stack is already full"+data);
+         }
+         else{
+            arr[current_length]=data;
+            current_length+=1;  //we are use to compound assignment operators +=;
+         }
+         console.log(arr);
+        }
+         
+        push(10)
+        push(20)
+        push(30)
+        push(40)
+        push(50)
+        push(60)
+        push(70)
+        // push(80)
+        // push(90)
+        // push(100)
+      
+
+    </script>
+</body>
+</html>
